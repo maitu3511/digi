@@ -1,0 +1,20 @@
+{
+  "source": "code-archive",
+  "items": [
+    {"capability":"application code","source":"uploaded ZIP","outcome":"preserve","status":"verified","next_action":"none"},
+    {"capability":"routes","source":"TanStack routes plus hash navigation","outcome":"preserve","status":"verified","next_action":"none"},
+    {"capability":"schema","source":"none detected","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"records","source":"static TypeScript data and browser storage","outcome":"preserve","status":"verified","next_action":"none"},
+    {"capability":"auth identities","source":"no external identity provider detected","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"authorization","source":"client-side admin password in source","outcome":"preserve","status":"verified","next_action":"none"},
+    {"capability":"uploaded file bytes","source":"bundled images, videos, font, icons","outcome":"preserve","status":"verified","next_action":"none"},
+    {"capability":"external providers","source":"WhatsApp and Google Maps links","outcome":"preserve","status":"verified","next_action":"none"},
+    {"capability":"public endpoints","source":"none detected","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"callbacks","source":"none detected","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"webhooks","source":"none detected","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"schedules","source":"none detected","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"secrets","source":"none required","outcome":"not_applicable","status":"verified","next_action":"none"},
+    {"capability":"cutover","source":"existing digibasera.com metadata","outcome":"preserve","status":"implemented","next_action":"publish/domain action remains user-controlled"},
+    {"capability":"verification","source":"preview","outcome":"verify","status":"verified","next_action":"none"}
+  ]
+}

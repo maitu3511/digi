@@ -1,0 +1,41 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Serve real static files (videos, images, fonts) as-is — must come BEFORE
+# the catch-all SPA rule below so hero background videos etc. never get
+# swallowed by the "/*" -> index.html fallback on hosts that don't already
+# shadow real files automatically.
+[[redirects]]
+  from = "/assets/videos/*"
+  to = "/assets/videos/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/fonts/*"
+  to = "/fonts/:splat"
+  status = 200
+
+# SPA fallback: every direct URL / refresh serves the app shell instead of a 404
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
